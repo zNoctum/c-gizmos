@@ -1,10 +1,15 @@
 #include "list.h"
 
+struct node {
+    void* data;
+    struct node* next;
+}
+
 node* createNode(void* data)
 {
     node* tmp;
     
-    tmp = (node*) malloc(sizeof(node));
+    tmp = malloc(sizeof(*tmp));
     tmp->next = NULL;
     tmp->data = data;
 

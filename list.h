@@ -6,10 +6,7 @@
 extern "C" {
 #endif
 
-typedef struct node {
-    void* data;
-    struct node* next;
-} node;
+typedef struct node node;
 
 /**
  * Function to create new node struct.
